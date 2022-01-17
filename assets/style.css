@@ -1,6 +1,8 @@
 #post {
   font-size: 1.5rem;
   font-family: verdana;
+  margin-bottom: 10px;
+  margin-right: 10px;
   padding: 20px;
   width: 30%;
   height: 30%;
@@ -13,7 +15,6 @@
 
 @media (max-width: 800px) {
   #post {
-    margin-bottom: 10px;
     width: 90%;
     display: default;
   }
