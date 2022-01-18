@@ -1,5 +1,5 @@
 # blogofdhiro-template
-Ofiicial template for [blogofdhiro.gq](https://blogofdhiro.gq)
+Ofiicial template for [blogofdhiro.gq](http://blogofdhiro.gq)
 
 This is not implied yet and under construction (as of January 2022)
 
