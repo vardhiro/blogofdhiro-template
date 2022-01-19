@@ -1,13 +1,21 @@
+* {
+  background-color: grey;
+}
+
+::selection {
+  background-color: grey;
+}
+
 #post {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: verdana;
   margin-bottom: 10px;
   margin-right: 10px;
   padding: 20px;
   width: 23%;
   height: 30%;
-  color: darkslategrey;
-  background-color: white;
+  color: white;
+  background-color: black;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   display: inline-block;
@@ -15,13 +23,16 @@
 
 footer {
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
 } 
 
+footer a{
+  background-color: grey; 
+}
 
 @media (max-width: 800px) {
   #post {
-    width: 90%;
+    width: 85%;
     display: default;
   }
 }
@@ -31,7 +42,7 @@ footer {
   text-decoration: none;
   font-family: calibri;
   border: 2px solid blue;
-  background-color: blue;
+  background-color: grey;
   padding: 5px;
   font-size: 1.2rem;
   border-radius: 10px;
@@ -39,7 +50,7 @@ footer {
 }
 
 #postview:hover,
-#postview:active {
+viewpost:active {
   transition-duration: 1s;
   text-decoration: none;
   font-family: calibri;
@@ -52,28 +63,26 @@ footer {
   color: blue;
 }
 
-.lmode {
+.dmode {
   display: none;
 }
 
-.dmode {
+.lmode {
   position: fixed;
   right: 10px;
-  margin-bottom: 10px;
   transition-duration: 1s;
   text-decoration: none;
   font-family: calibri;
   border: 2px solid blue;
-  background-color: blue;
+  background-color: black;
   padding: 5px;
   font-size: 1.2rem;
   border-radius: 10px;
   color: white;
-  background-color: blueviolet;
 }
 
-.dmode:hover,
-.dmode:active {
+.lmode:hover,
+.lmode:active {
   transition-duration: 1s;
   text-decoration: none;
   font-family: calibri;
@@ -84,42 +93,53 @@ footer {
   padding: 5px;
   font-size: 1.2rem;
   color: blue;
+}
+
+center.image{
+  background-color: black;
 }
 
 .post {
   width: 90%;
   margin: auto;
   display: block;
-  background-color: white;
+  color: white;
+  background-color: black;
   font-family: ubuntu;
   padding: 15px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 a {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   text-decoration:none;
-  border-bottom: 1px dotted blue;
+  border-bottom: 1px dotted yellow;
   font-style: monospace;
 }
 
 a:hover,
 a:active {
-  background-color: black;
+  background-color: grey;
   color: white;
   text-decoration: none;
   font-style: monospace;
 }
 
 .post-title {
+  background-color: black;
   font-weight: 700;
   font-size: 2rem;
 }
 
 .post-details {
+  background-color: black;
   font-family: "Source Code Pro for Powerline";
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 0.9rem;
+}
+
+article {
+  background-color: black;
 }
