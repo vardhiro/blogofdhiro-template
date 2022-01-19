@@ -40,7 +40,7 @@ session_start();
     <a href='mailto:admin@blogofdhiro.gq'>admin@blogofdhiro.gq</a>
     <div class="post-details">Are you on the web?</div>
     Yes! I am on :- <br><br>
-    <a href="https://stackoverflow.com" title="where I ask my stupid questions">StackOverflow</a><br><br>
+    <a href="https://stackoverflow.com/users/16704582/vardhiro" title="where I ask my stupid questions">StackOverflow</a><br><br>
     <a href="https://github.com/vardhiro" title="where I keep my nonsense code">GitHub</a><br><br>
     <a href="https://replit.com/@vardhiro" title="where I write my more nonsense code">...and Replit</a><br>
     <div class="post-details">Happy Reading 😃😊</div>
