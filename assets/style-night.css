@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
   background-color: grey;
 }
@@ -105,7 +107,7 @@ center.image{
   display: block;
   color: white;
   background-color: black;
-  font-family: ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   padding: 15px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -134,7 +136,7 @@ a:active {
 
 .post-details {
   background-color: black;
-  font-family: "Source Code Pro for Powerline";
+  font-family: 'Roboto Mono', monospace;
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 0.9rem;

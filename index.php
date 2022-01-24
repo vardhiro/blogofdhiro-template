@@ -8,25 +8,16 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/script.js"></script>
-    <?php
-    if(isset($_SESSION['mode'])){
-        $mode = $_SESSION['mode'];
-        if($mode == 'light'){
-            echo'<div id ="stylearea"><link rel="stylesheet" href="assets/style.css"></div>';
-        }else{
-            echo'<div id ="stylearea"><link rel="stylesheet" href="assets/style-night.css"></div>';
-        }
-    }
-    ?>
+    <link rel="stylesheet" href="assets/style-night.css">
+    <style>
+    img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+    </style>
     <title>Home | blogofdhiro.gq</title>
 </head>
 <body>
-    <nav>
-        <button class="lmode" onclick="lightmode()">Light Mode</button>
-        <button class="dmode" onclick="darkmode()">Dark Mode</button><br><br>
-    </nav>
+    <center><a href="me.php" title='About me'><h1 style="font-family: 'Ubuntu';border-bottom: 1px solid yellow">THE DHIRO'S BLOG</h1></a> </center>
     <?php
-    $conn = new mysqli("localhost","root","","alldb");
+    $conn = mysqli_connect("localhost", "root","", "alldb");
     $s = "SELECT article_title,article_id FROM articles ORDER BY article_timestamp DESC";
     $q = mysqli_query($conn,$s);
     while($row = mysqli_fetch_array($q)){

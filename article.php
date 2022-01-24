@@ -8,25 +8,24 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="assets/script.js"></script>
-    <?php
-    if(isset($_SESSION['mode'])){
-        $mode = $_SESSION['mode'];
-        if($mode == 'light'){
-            echo'<div id ="stylearea"><link rel="stylesheet" href="assets/style.css"></div>';
-        }else{
-            echo'<div id ="stylearea"><link rel="stylesheet" href="assets/style-night.css"></div>';
+    <style>
+        p, h1, h2, h3, em, h4, iframe{
+            background-color: black;
         }
-    }
-    ?>
+        
+    img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+    </style>
+    <link rel="stylesheet" href="assets/style-night.css">
 </head>
 <body>
-    <button class="lmode" onclick="lightmode()">Light Mode</button>
-    <button class="dmode" onclick="darkmode()">Dark Mode</button><br><br>
     <div class='post'>
+    <center>
+        <a href="."><h1 style="border-bottom: 1px solid yellow">THE DHIRO'S BLOG</h1></a>
+    </center>
     <?php
     if(isset($_GET['id'])){
     $id = $_GET['id'];
-    $conn = new mysqli("localhost","root","","alldb");
+    $conn = mysqli_connect("localhost", "root","", "alldb");
     $s = "SELECT * FROM articles WHERE article_id = '$id'";
     $q = mysqli_query($conn,$s);
     while ($row = mysqli_fetch_array($q)) {
@@ -51,11 +50,14 @@ session_start();
     }
 }
 ?>
+<script src="https://utteranc.es/client.js"
+        repo="vardhiro/blogofdhiro-template"
+        issue-term="pathname"
+        label="Comments "
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+</script>
 </div>
 </body>
-<footer>
-<a href='changemode.php'>Change to light/dark mode permanently |</a>
-<a href='index.php'>Return to Home | </a>
-<a href='me.php'>About me</a>
-</footer>
 </html>
